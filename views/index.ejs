@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <% include common/css.ejs %>
+    <link rel='stylesheet' href='/stylesheets/index.css'/>
+</head>
+<body>
+<% include common/header.ejs %>
+<main class="main-content">
+    <div class="thumbnail-wrapper">
+        <ul class="thumbnail-list">
+            <li><a href="/smartphone_app">
+                    <img src="/images/thumbnails/PAK153131024_TP_V.jpg" alt="smartphone app" width="300">
+                    <h2 class="section-title">スマホアプリ</h2>
+                    <p class="thumbnail-desc">iPhoneもしくはandroidアプリを作って、アプリ自体の売り上げ、あるいはアプリ内課金、広告収入で収益を出すやり方。<br>
+                        使用言語はiPhoneだったらObjectiveCあるいはSwift(こっちのが給料高い)。androidだったらAndroidJava(Javaと同一視すると怒る人がいるので注意)<br>
+                    </p>
+                    <p class="show-detail">詳しくみる</p>
+                </a>
+            </li>
+            <li><a href="/affiliate">
+                    <img src="/images/thumbnails/gori0I9A9925_TP_V.jpg" alt="affiliate" width="300">
+                    <h2 class="section-title">アフィリエイト</h2>
+                    <p class="thumbnail-desc">まとめサイトで悪の代名詞とされたアフィリエイト。平たく言えばサイトで客を釣って広告を表示、あるいは踏ませることによってインセンティブを得るという方法。<br>
+                        別に悪いことをしているわけじゃないのに、アフィサイトという響きだけで悪者扱いされる。<br>
+                        集客するための記事さえ用意できれば、適当にコメントをつけて投稿するだけで小遣い稼ぎになるわりかし効率的な稼ぎ方でもある。<br>
+                    </p>
+                    <p class="show-detail">詳しくみる</p>
+                </a>
+            </li>
+            <li><a href="/homepage">
+                    <img src="/images/thumbnails/PAK_MT9V9A6981_TP_V.jpg" alt="homepage" width="300">
+                    <h2 class="section-title">ホームページ作成代行</h2>
+                    <p class="thumbnail-desc">フロントエンドエンジニアの本職。<br>
+                        技術レベルは正直それほど要求されないが、フリーランスとして自分で仕事をとってこなくてはいけないことがまず大変である。<br>
+                        そして顧客の要求レベルに答え、納期に間に合わせなくてはいけないことなど、新人時代に（もしくは現在も）味わった苦痛の焼き直しを強いられる中々の苦行である。<br>
+                        もしあなたがhtml/css/javascriptを書いていないと落ち着かない症状に陥っているなら、天職かもしれない。
+                    </p>
+                    <p class="show-detail">詳しくみる</p>
+                </a>
+            </li>
+            <li><a href="/wordpress">
+                    <div class="thumb-img-container">
+                        <img src="/images/thumbnails/wordpress-logo-hoz-rgb.png" alt="wordpress" width="280">
+                    </div>
+                    <h2 class="section-title">Wordpressテンプレート販売</h2>
+                    <p class="thumbnail-desc">ディレクターが大好きなワードプレスのテンプレートを作って売る方法。<br>
+                        技術力はほとんど要求されないが、デザイン力という別次元の技術力を要求されるため、まともに売れるものを作れるかはエンジニア歴に左右されない。<br>
+                        そういった意味ではまだまだパイの残っている領域なのかもしれない。
+                    </p>
+                    <p class="show-detail">詳しくみる</p>
+                </a>
+            </li>
+            <li><a href="/webservice">
+                    <img src="/images/thumbnails/MIMIYAKO85_cafedeworks20140725_TP_V.jpg" alt="webservice" width="300">
+                    <h2 class="section-title">ウェブサービス</h2>
+                    <p class="thumbnail-desc">ウェブサービスを立ち上げて、サービスの利用料、あるいは広告収入を得る方法。<br>
+                        難易度はびっくりするほど高い。そもそも個人でやるようなものではないので、お友達を誘ってどうぞ。<br>
+                        AWS、あるいはfirebaseを使えば、インフラエンジニアは不要。フロントエンドは本職だからいいとして、バックエンドの技術及び、使用するテンプレートの知識が重要となる。
+                    </p>
+                    <p class="show-detail">詳しくみる</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</main>
+<% include common/footer.ejs %>
+<% include common/script.ejs %>
+<script type="text/javascript" src="javascripts/index.js"></script>
+</body>
+</html>

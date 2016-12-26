@@ -1,0 +1,101 @@
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 62.5%;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.cf:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.section-title {
+  margin-top: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+backquote {
+  color: blue;
+}
+
+/* header */
+header {
+  width: 100%;
+  min-width: 1020px;
+  height: 70px;
+  padding-left: 10px;
+  padding-right: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.header-title {
+  float: left;
+  font-weight: bold;
+}
+.sub-title {
+  display: inline-block;
+  padding-top: 40px;
+  font-size: 1.3rem;
+}
+.hamburger-container {
+  float: right;
+  margin-top: 17px;
+  padding-top: 3px;
+  height: 20px;
+}
+.hamburger-container:after,
+.hamburger-line:before,
+.hamburger-line:after {
+  content: '';
+  display: block;
+  margin-top: 3px;
+  height: 3px;
+  width: 20px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  background-color: #666;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.hamburger-container.active > .hamburger-line:after {
+  -webkit-transform: translate3d(10px, -3px, 0px);
+  -moz-transform: translate3d(10px, -3px, 0px);
+  -ms-transform: translate3d(10px, -3px, 0px);
+  -o-transform: translate3d(10px, -3px, 0px);
+  transform: translate3d(10px, -3px, 0px);
+  opacity: 0;
+}
+.hamburger-container.active > .hamburger-line:before {
+  margin-top: 7px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.hamburger-container.active:after {
+  margin-top: -8px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* footer */
+.common-footer {
+  padding: 10px;
+}
