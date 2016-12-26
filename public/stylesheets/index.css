@@ -22,6 +22,7 @@
 	vertical-align: top;
 }
 
+
 .thumb-img-container {
 	width: 300px;
 	padding: 10px;
@@ -33,7 +34,7 @@
 .thumbnail-desc {
 	margin-top: 10px;
 	font-size: 1.4rem;
-	line-height: 1.8rem;
+	line-height: 2.4rem;
 }
 .show-detail {
 	margin-top: 10px;

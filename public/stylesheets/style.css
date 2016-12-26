@@ -1,13 +1,38 @@
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Bold");
+  font-weight: bold;
+}
+
 html {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 62.5%;
+  font-size: 62.5%
+}
+
+body {
+  font-family: "Yu Gothic", YuGothic, sans-serif;
 }
 
 a {
   color: #333;
   text-decoration: none;
   font-size: 1.2rem;
+  opacity: 1;
+  -webkit-transition: opacity 0.35s;
+  -moz-transition: opacity 0.35s;
+  -ms-transition: opacity 0.35s;
+  -o-transition: opacity 0.35s;
+  transition: opacity 0.35s;
 }
+
+a:hover {
+  opacity: 0.75;
+}
+
 .cf:after {
   content: '';
   display: block;
@@ -15,7 +40,7 @@ a {
 }
 
 .section-title {
-  margin-top: 10px;
+  margin-top: 30px;
   font-size: 1.8rem;
   font-weight: bold;
 }
