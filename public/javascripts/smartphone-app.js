@@ -7,7 +7,7 @@ KC.SMARTPHONE_APP.INDEX = {
 		this.bindEvent();
 	},
 	setParameter: function() {
-		this.chart = c3.generate({
+		this.chartUserRate = c3.generate({
 			bindto: "#user-rate",
 			data: {
 				columns: [
@@ -27,6 +27,31 @@ KC.SMARTPHONE_APP.INDEX = {
 					tick: {
 		               format: function (d) { return d + '%'; }
 					}
+				}
+			}
+		});
+		this.chartMarketScale = c3.generate({
+			bindto: "#market-scale",
+			data: {
+				columns: [
+					['モバイルゲーム', '8', '9', '11', '12', '13', '14', '15'],
+					['モバイル映像', '5', '7', '8', '10', '13', '17', '23'],
+					['モバイル音楽', '1', '1', '1', '1', '1', '1', '1'],
+					['モバイル広告', '8', '14', '19', '24', '28', '33', '37']
+				],
+				groups: [
+					['モバイルゲーム', 'モバイル映像', 'モバイル音楽', 'モバイル広告']
+				],
+				type: 'bar'
+			},
+			axis: {
+				x: {
+					type: 'category',
+					categories: ['2012', '2013', '2014', '2015', '2016', '2017', '2018'],
+					label: '年'
+				},
+				y: {
+					label: '10億ドル'
 				}
 			}
 		});

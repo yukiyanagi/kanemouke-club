@@ -19,6 +19,9 @@
 	font-size: 1.8rem;
 	font-weight: bold;
 }
+.info-chart > dd + dt {
+	margin-top: 30px;
+}
 .info-chart > dd {
 	margin-top: 10px;
 	font-size: 1.5rem;
