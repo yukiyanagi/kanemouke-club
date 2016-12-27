@@ -51,7 +51,7 @@ a:hover {
   font-weight: bold;
 }
 
-backquote {
+backquote > a {
   color: blue;
 }
 

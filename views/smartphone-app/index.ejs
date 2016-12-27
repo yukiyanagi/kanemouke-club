@@ -11,10 +11,17 @@
 <main class="main-content">
     <h1 class="content-title">スマートフォンアプリ</h1>
     <dl class="info-chart">
-        <dt>OS別使用率</dt>
+        <dt>日本のOS別使用率</dt>
         <dd>
             <figure id="user-rate"></figure>
-            <p class="info-ref"><a href="http://www.kantarworldpanel.com/global/smartphone-os-market-share/" target="_blank"><backquote>出典: KANTER WORLDPANEL 様</backquote></a></p>
+            <p class="info-ref">
+                <backquote class="info-ref">出典: <a
+                            href="http://www.kantarworldpanel.com/global/smartphone-os-market-share/"
+                            target="_blank">
+                        KANTER WORLDPANEL
+                    </a> 様
+                </backquote>
+            </p>
             <div class="desc-container">
                 <p>この図を見てわかるのは、AndroidとiPhoneの使用率が月度により乱高下していることだ。<br>
                     原因の一つとして考えられるのが、iPhoneの新機種発表である。
@@ -23,18 +30,19 @@
             <table class="sale-date-table">
                 <theader>
                     <tr>
-                        <th></th>
+                        <th>機種名</th>
                         <% saleDate.forEach(function (value) { %>
                         <th><%= value.columnName %></th>
                         <% }); %>
                     </tr>
                 </theader>
                 <tbody>
-                    <tr><th>販売日(日本)</th>
-                        <% saleDate.forEach(function (value) { %>
-                        <td><%= value.columnValue %></td>
-                        <% }); %>
-                    </tr>
+                <tr>
+                    <th>販売日(日本)</th>
+                    <% saleDate.forEach(function (value) { %>
+                    <td><%= value.columnValue %></td>
+                    <% }); %>
+                </tr>
                 </tbody>
             </table>
             <div class="desc-container">
@@ -44,7 +52,12 @@
         <dt>世界のコンテンツ別モバイル端末市場</dt>
         <dd>
             <figure id="market-scale"></figure>
-            <p class="info-ref"><a href="http://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h27/html/nc252310.html" target="_blank"><backquote>出典: 総務省 平成27年度阪 情報通信白書</backquote></a></p>
+            <p class="info-ref">
+                <backquote>出典: <a href="http://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h27/html/nc252310.html"
+                                  target="_blank">
+                        総務省 平成27年度阪 情報通信白書
+                    </a></backquote>
+            </p>
             <div class="desc-container">
                 <p>上記グラフから読み取れるのは、モバイル広告とモバイル映像の伸びが大きいということだ。特にモバイル広告は伸び幅が大きく、2012年度と2016年度を比較するとその差は3倍以上である。<br>
                     もしアプリで収益をあげたいのならば、広告部門の方が伸び代が大きいということは覚えておいて損はないだろう。
@@ -52,6 +65,117 @@
             </div>
         </dd>
     </dl>
+    <section>
+        <h2 class="section-title">AndroidとiOSの個人的開発難易度</h2>
+        <div class="desc-container">
+            <p>前提条件として以下の情報を表示する。</p>
+        </div>
+        <table class="terminal-comparison">
+            <theader>
+                <tr>
+                    <th>項目名</th>
+                    <th>
+                        <figure>
+                            <img src="https://developer.android.com/images/brand/Android_Robot_200.png" alt="android robot"
+                                 width="100">
+                        </figure>
+                        <figcaption>Android</figcaption>
+                    </th>
+                    <th>
+                        <figure>
+                            <img src="https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?201612250706"
+                                 alt="apple" width="100">
+                        </figure>
+                        <figcaption>iOS</figcaption>
+                    </th>
+                </tr>
+            </theader>
+            <tbody>
+            <tr>
+                <th>開発言語</th>
+                <td>JAVA</td>
+                <td>Swift/Objective-c</td>
+            </tr>
+            <tr>
+                <th>IDE(統合開発環境)</th>
+                <td>AndroidStudio</td>
+                <td>XCode</td>
+            </tr>
+            <tr>
+                <th>開発用マシンの制限</th>
+                <td>無し</td>
+                <td>Mac OS</td>
+            </tr>
+            <tr>
+                <th>シミュレータの性能</th>
+                <td>微妙</td>
+                <td>素晴らしい</td>
+            </tr>
+            <tr>
+                <th>資料の多さ(in Amazon)</th>
+                <td>1,359件<br>(「android 開発」で検索 2016/12/27現在)</td>
+                <td>646件<br>(「iphone アプリ 開発」で検索 2016/12/27現在)</td>
+            </tr>
+            <tr>
+                <th>主なパッケージ管理ツール</th>
+                <td>Gradle</td>
+                <td>CocoaPods</td>
+            </tr>
+            <tr>
+                <th>ストアへの出品料</th>
+                <td>1 回限りの登録料：25 米ドル</td>
+                <td>個人・年間登録料：99 米ドル</td>
+            </tr>
+            <tr>
+                <th>アプリ承認までの時間</th>
+                <td>2~3時間(目安)</td>
+                <td>48時間(目安)</td>
+            </tr>
+            <tr>
+                <th>ストアの徴収</th>
+                <td>売り上げの30%</td>
+                <td>売り上げの30%<br>
+                    2年目以降は15%になるとかならないとか
+                </td>
+            </tr>
+            <tr>
+                <th>ダウンロード数<br>
+                    (2015年<a href="https://www.appannie.com/jp/">app annie</a>調べ<br>
+                    単位: Indexed Download)
+                </th>
+                <td>200over</td>
+                <td>100over</td>
+            </tr>
+            <tr>
+                <th>課金額<br>
+                    (2015年<a href="https://www.appannie.com/jp/">app annie</a>調べ<br>
+                    単位: Indexed Revenue)
+                </th>
+                <td>100over</td>
+                <td>200 few less</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="desc-container">
+            <p>個人的にはAndroidの開発は好きだが、情報だけを見るならiOSアプリに軍配が上がる。<br>
+                特記すべきはiOS App Storeの売り上げが Google Playの売り上げを75%以上も追い越しているということだ。<br>
+                これには所々理由があると思われるが、単純に高価なiOS搭載デバイスを買える人間の方が課金しやすい傾向があるのかもしれない。<br>
+                また開発に使われる言語もSwiftのが後発ということもあり、書き易さはSwiftのが優れている。<br>
+                とはいえ書きやすい言語だから優れているのかといえばその限りでもない。バグの少ない堅牢な作りにするためには言語の理解を深めることが必要不可欠であり、その点を鑑みればSwiftを使おうがJavaを使おうが差異はない。Objective-cはやめておいた方がいい。<br>
+            </p>
+            <p>
+                アプリ開発の難易度を決めるのは、サーバを用意する必要があるかないかだ。<br>
+                当然独自でAPIを用意して通信する仕組みを作るとなるとAPI作成やDB構築などのバックエンドの作業も必要になってくるため、覚えることも注意することも増えてくる。<br>
+                さらに言えばサーバを常に動かし続けていないといけないのでサーバの運用費もかかる。<br>
+                しかし独自のサービスを作ろうとした場合、自前のAPIやDBを用意することはほぼ必須だ。<br>
+                近年はAWSやWindows Azure, firebaseなどのsaasサービスを使用してある程度の手間を減らすことができるので、これらのサービスの選定と学習も重要だろう。<br>
+            </p>
+            <p>
+                では結局アプリ開発で設けるためにどうしたらいいかだが、基本スタンドアロンで既存の広告サービス(Google Ads等)にのみ接続するアプリで開発のノウハウを貯めるのがいいと思う。<br>
+                独自サービスを作りたいと思ったのなら経験値を貯めてから仲間を募って作ればいい。間違っても経験のない状態で独力で挑むようなものではない。
+            </p>
+        </div>
+    </section>
 </main>
 <% include ../common/footer.ejs %>
 <% include ../common/script.ejs %>
