@@ -1,0 +1,50 @@
+.main-content {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.vs-table {
+	font-size: 1.5rem;
+}
+.vs-table th,
+.vs-table td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.info-chart > dt {
+	margin-top: 20px;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+.info-chart > dd {
+	margin-top: 10px;
+	font-size: 1.5rem;
+	line-height: 2.0rem;
+}
+
+.info-ref {
+	text-align: right;
+}
+
+.sale-date-table {
+	margin-top: 20px;
+	width: 100%;
+	border: 1px solid #666;
+	text-align: center;
+}
+
+.sale-date-table > tbody {
+	border-top: 1px solid #666;
+}
+
+.sale-date-table th + th,
+.sale-date-table td {
+	padding: 5px 0;
+	border-left: 1px solid #666;
+}
+.desc-container {
+	margin-top: 20px;
+}

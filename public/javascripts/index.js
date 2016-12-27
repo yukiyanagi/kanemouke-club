@@ -20,7 +20,6 @@ KC.RESIZE_CARD = {
 		var self = this,
 			$cards = this.$container.children('li');
 
-
 		while($cards.length) {
 			var top = $cards.eq(0).offset().top;
 			for (var i = 0, len = $cards.length; i < len; i++ ) {

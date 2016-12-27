@@ -3,16 +3,50 @@
 <head>
     <title><%= title %></title>
     <% include ../common/css.ejs %>
-    <link rel='stylesheet' href='/stylesheets/index.css'/>
+    <link rel='stylesheet' type="text/css" href='/stylesheets/smartphone-app.css'/>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/c3.css">
 </head>
 <body>
 <% include ../common/header.ejs %>
-<main>
-    <h2 class="section-title">スマートフォンアプリ</h2>
-
+<main class="main-content">
+    <h1 class="content-title">スマートフォンアプリ</h1>
+    <dl class="info-chart">
+        <dt>OS別使用率</dt>
+        <dd>
+            <figure id="user-rate"></figure>
+            <p class="info-ref"><a href="http://www.kantarworldpanel.com/global/smartphone-os-market-share/" target="_blank"><backquote>資料: KANTER WORLDPANEL</backquote></a></p>
+            <div class="desc-container">
+                <p>この図を見てわかるのは、AndroidとiPhoneの使用率が月度により乱高下していることだ。<br>
+                    原因の一つとして考えられるのが、iPhoneの新機種発表である。
+                </p>
+            </div>
+            <table class="sale-date-table">
+                <theader>
+                    <tr>
+                        <th></th>
+                        <% saleDate.forEach(function (value) { %>
+                        <th><%= value.columnName %></th>
+                        <% }); %>
+                    </tr>
+                </theader>
+                <tbody>
+                    <tr><th>販売日(日本)</th>
+                        <% saleDate.forEach(function (value) { %>
+                        <td><%= value.columnValue %></td>
+                        <% }); %>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="desc-container">
+                <p>ご覧の通りiPhoneの新機種がでると次期のシェアが上がっている。アプリのリリース時期を考える材料になるといえよう。</p>
+            </div>
+        </dd>
+    </dl>
 </main>
 <% include ../common/footer.ejs %>
 <% include ../common/script.ejs %>
-<script type="text/javascript" src="/javascripts/index.js"></script>
+<script type="text/javascript" src="/javascripts/d3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/javascripts/c3.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/javascripts/smartphone-app.js"></script>
 </body>
 </html>
