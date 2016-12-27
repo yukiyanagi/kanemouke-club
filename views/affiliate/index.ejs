@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <% include ../common/css.ejs %>
+    <link rel='stylesheet' href='/stylesheets/affiliate.css'/>
+</head>
+<body>
+<% include ../common/header.ejs %>
+<main class="main-content">
+    <h1 class="content-title">アフィリエイト</h1>
+    <section>
+        <h2 class="section-title">概要</h2>
+        <div class="desc-container">
+            <p>いわゆる広告収入のことである。</p>
+            <p>やり方はいくつかあるが、共通することは集客のためのコンテンツを用意して広告収入を得るということである。</p>
+            <p>まとめサイトのサイドバーにずらずらと並んでいるやつなどが判りやすい例だろう。</p>
+            <p>閲覧、クリック、購入などいくつかのステージが設定されており、より高いステージのアクションを実行されるほど掲載者へのキックバックも大きい。</p>
+        </div>
+    </section>
+    <section>
+        <h2 class="section-title">広告一覧</h2>
+        <table>
+            <theader>
+                <tr>
+                    <th>項目名</th>
+                    <th><a href="https://affiliate.amazon.co.jp/">Amazonアソシエイト</a></th>
+                    <th><a href="https://www.a8.net/">A8net</a></th>
+                </tr>
+            </theader>
+            <tbody>
+            <tr>
+                <th>紹介元企業</th>
+                <td><a href="https://www.amazon.co.jp/">Amazon</a></td>
+                <td><a href="https://www.fancs.com/">株式会社ファンコミュニケーションズ</a></td>
+            </tr>
+            <tr>
+                <th>報酬タイプ</th>
+                <td>成功報酬型</td>
+                <td>広告による</td>
+            </tr>
+            <tr>
+                <th>報酬割合</th>
+                <td>最大10%</td>
+                <td>広告による(30%のとかもあった)</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<% include ../common/footer.ejs %>
+<% include ../common/script.ejs %>
+</body>
+</html>

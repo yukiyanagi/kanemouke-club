@@ -1,0 +1,30 @@
+.main-content {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+.desc-container > p {
+	margin-top: 10px;
+	font-size: 1.5rem;
+	line-height: 2.0rem;
+}
+
+table {
+	margin-top: 20px;
+	width: 100%;
+	border: 1px solid #666;
+	font-size: 1.4rem;
+	text-align: center;
+}
+tbody {
+	border-top: 1px solid #666;
+}
+td,
+th + th {
+	border-left: 1px solid #666;
+}
+td,
+tr {
+	border-top: 1px solid #666;
+	line-height: 20px;
+}
