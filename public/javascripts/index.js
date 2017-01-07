@@ -40,13 +40,13 @@ KC.CREATEJS_MANAGER = {
 	},
 	createItems: function() {
 		this.bg = new createjs.Shape();
-		this.bg.graphics.beginFill("#000000");
+		this.bg.graphics.beginFill("#FFF");
 		this.bg.graphics.drawRect(0, 0, this.$canvasWrapper.innerWidth(), this.$canvasWrapper.outerHeight());
 		this.stage.addChild(this.bg);
 
 		var keys = Object.keys(this.BUBBLE);
 		this.bgShapes = [];
-		for (var i = 0, len = 300; i < len; i++) {
+		for (var i = 0, len = 500; i < len; i++) {
 			this.bgShapes.push(new KC.CREATEJS_BG_BUBBLE(this.stage));
 		}
 		this.shapes = [];
@@ -137,19 +137,19 @@ KC.CREATEJS_BUBBLE.prototype = {
 
 		this.shape = new createjs.Shape();
 		this.shape.graphics.setStrokeStyle(this.BORDER_WIDTH);
-		this.shape.graphics.beginFill("rgba(0, 0, 0, 1)");
+		this.shape.graphics.beginFill("rgba(255, 255, 255, 0.8)");
 		this.shape.graphics.beginLinearGradientStroke(["#363","#9cc","#ccc"],[0.1,0.3,1.0],0,-100,50,100);
 		this.shape.graphics.drawCircle(0, 0, this.SIZE - this.BORDER_WIDTH);
 		this.bubble.addChild(this.shape);
 
-		this.title = new createjs.Text(this.titleMessage, "20px serif", "rgba(255, 255, 255, 0.9)");
+		this.title = new createjs.Text(this.titleMessage, "20px serif", "rgba(25, 25, 25, 0.9)");
 		this.title.textAlign = "center";
 		this.title.textBaseline = "middle";
 		this.title.y = this.DEFAULT.titleY;
 		this.bubble.addChild(this.title);
 		this.shape.cursor = "pointer";
 
-		this.desc = new createjs.Text(this.descMessage, "15px serif", "rgba(255, 255, 255, 0.9)");
+		this.desc = new createjs.Text(this.descMessage, "15px serif", "rgba(25, 25, 25, 0.9)");
 		this.desc.textAlign = "center";
 		this.desc.textBaseline = "middle";
 		this.desc.y = 0;
