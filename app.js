@@ -12,6 +12,7 @@ var affiliate = require('./routes/affiliate');
 var homepage = require('./routes/homepage');
 var wordpress = require('./routes/wordpress');
 var webservice = require('./routes/webservice');
+var minutes = require('./routes/minutes');
 
 var app = express();
 
@@ -34,6 +35,7 @@ app.use('/affiliate', affiliate);
 app.use('/homepage', homepage);
 app.use('/wordpress', wordpress);
 app.use('/webservice', webservice);
+app.use('/minutes', minutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
